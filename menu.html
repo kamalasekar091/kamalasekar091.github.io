@@ -1,0 +1,343 @@
+
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">
+	<div class="sixteen columns">
+		<div class="content-tabs">
+			<ul class="tabs-nav clearfix">
+				<li><a href="#cakeMenu">Cake Menu</a></li>
+				<li><a href="#cupCakeMenu">Cup Cake Menu</a></li>
+				<!--<li><a href="#servingCharts">Serving Charts</a></li>-->
+				<li><a href="#ordering">Ordering</a></li>
+
+				
+			</ul><!--/ .tabs-nav-->
+
+			<div class="tabs-container">
+
+				<div class="tab-content" id="cakeMenu">
+				<div class="CSSTableGenerator" >
+                <table >
+                    <tr>
+                        <td>
+                            Flavors
+                        </td>
+                        <td >
+                            Filling
+                        </td>
+                        <td>
+                           Icing/Fondant	
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td >
+                            <ul>
+							<li>Strawberry</li>
+							<li>Chocolate</li>
+							<li>Vanilla</li>
+							<li>Marble(Chocolate &Vanilla)	</li>
+							<li>Lemon</li>
+							<li>Orange</li>Pineapple
+							<li>Coconut</li>
+							<li>Carrot (no nuts)</li> 
+							<li>Red Velvet</li>
+							<li>Funfetti</li>
+						</ul>		
+                        </td>
+                        <td>
+                            <ul>
+								<li><b>Butter Cream</b> (Vanilla, Chocolate, Strawberry, Mocha, Swiss) </li>
+							</ul>
+							<ul><b>*Speciality Filling</b>
+								<li><b>*Whipped Cream</b>(Vanilla, Chocolate(white/dark), Raspberry, Oreo Cookie Cream, Lemon, Strawberry) </li>
+								<li><b>*Fudge</b></li> 
+								<li><b>*Cream Cheese</b></li>
+								<li><b>*Ganache</b>(white or dark chocolate)</li>
+								<li><b>*Mascarpone Mousse</b>(with coffee flavour or coffee liquor)</li>
+							</ul>		
+                        </td>
+                        <td>
+	                        <ul>
+	                        	<li><b>Regular icing </b>comes with your choice of  Buttercream or Swiss Buttercream. </li>
+								<li><b>Fondant </b> covered cakes are preferred for certain complex decorations and figurines as it gives a neat finish look.</li>
+							    <li>We make our own marshmallow fondant (with Gelatin). <b>Vegeterian Fondant</b> is available upon request.</li>
+							    <li>
+							 </ul>
+	                     </td>
+	                    
+	                     </tr>
+	                     <tr> <td colspan="3">* If you dont see the flavor you are looking for, please let us know. We will try to accomodate it.<br>
+	                     					  **While we do make<b> Gluten Free / Dairy free/ Nut free/ Egg Free cakes</b>, our facility is not dedicated 
+	                     						for above dietary conditions. Though we take it very serious and follow strict procedures to avoid 
+	                     						any cross-contamination, if you are highly allergic to above, we do not suggest having our cake.
+	                     	   </td></tr>
+	             </table>
+	             
+	             <table>
+	                     <tr>
+	                        
+			                     <td>Pricing (with simple decorations)</td>        
+			             </tr>
+			             <tr>
+			             	<td>
+			             		<ul>
+			             			<li><b>Regular (Butter cream filled and iced )</b> - $2 / serving.</li>
+			             			<li><b>Fondant covered</b>  - $3 / serving.</li>	
+			             			<li><b>Sculpted cakes </b> start from $4 / serving, depends on complexity.</li>
+			             			<li><b>*Speciality Filling  - add 50 cents / serving.</b></li>
+			             			<li>Above are the base prices for simple decorations on both buttercream or fondant cakes. Check our <a href="sample.html" target="_blank">samples page</a>.</li>
+			             		    <li>Simple decorations <b>include </b>- wordings, top and bottom border decorations, some flower on top.</li>
+			             			<li>Simple decorations <b>does not include </b>- f figurines,intricate designs, handmade sugar flowers and decorations, fresh fruits, freash flowers. For complicated designs / decoration, price depends on work.</li>
+			             		</ul>
+			             	</td>
+			             </tr>	
+			             		                                	
+                </table>
+                </div>
+            
+
+				</div><!--/ .tab-content -->
+
+				<div class="tab-content" id="cupCakeMenu">
+					<div class="CSSTableGenerator" >
+                		<table >
+	                    <tr>
+	                        <td>
+	                            Flavours
+	                        </td>
+	                        <td >
+	                            Topping
+	                        </td>
+	                        <td></td>
+	                       
+	                    </tr>
+	                    <tr>
+	                    	<td>
+	                    	<ul>
+	                    		<li>Strawberry</li>
+	                    		<li>Chocolate</li>
+	                    		<li>Vanilla</li>
+	                    		<li>Lemon</li>
+	                    		<li>Orange</li>
+	                    		<li> Pineapple</li>
+	                    		<li> Coconut </li>
+	                    		<li>Funfetti </li>
+	                    		<li> Carrot </li>
+	                    		<li> Red Velvet </li> 
+	                    	</ul>
+	                    	</td>
+	                    	<td>
+	                    	<ul>
+	                    		<li><b>Butter Cream</b>(Vanilla, Chocolate, Strawberry, Mocha, Swiss)</li>
+	                    		
+	                    	</ul>
+	                    	<ul><b>*Speciality topping</b>
+	                    		<li><b>*Fudge</b></li>
+	                    		<li><b>*Cream Cheese</b></li>
+	                    		<li><b>*Ganache</b>(white or dark chocolate)</li>
+	                    	</ul>	
+							</td>
+							
+						</tr>	
+						<tr>
+							<td colspan="3">
+							* If you dont see the flavor you are looking for, please let us know. We will try to accomodate it.<br>
+	                     	**While we do make<b> Gluten Free / Dairy free/ Nut free/ Egg Free cakes</b>, our facility is not dedicated 
+	                     	for above dietary conditions. Though we take it very serious and follow strict procedures to avoid 
+	                     	any cross-contamination, if you are highly allergic to above, we do not suggest having our cake.
+	                     	</td>
+	                    </tr>
+	                </table>
+	                <table> 
+	                	 <tr><td>Pricing for standard sized cupcakes (with simple sprinkles). </td></tr>   	
+	                     <tr>						
+							<td>
+								<ul>
+									<li>Regular Buttercream topping - $1.75 / cupcake. </li>
+									<li><b>*Speciality topping </b>- $2.25 / cupcake.</li>
+									<li><b>Special  decorations </b>- price for custom fondant/candy/chocolate decoration depends on the work.</li>
+								</ul>	
+						</tr>
+					</table>	
+
+            </div>
+		</div><!--/ .tab-content -->
+			<div class="tab-content" id="servingCharts">
+				<div class="CSSTableGeneratorChart" >
+
+                	<table >
+                		<tr><td colspan="4">Round 4 inch tall</td></tr>
+	                    <tr>
+	                        <td>Cake size </br> in Inches</td>
+	                        <td>Serves </td>
+	                        <td>Buttercream <br>price</td>   
+	
+	                        <td>Fondant<br>price</td>
+	                    </tr>
+	                    <tr>
+	                    	<td>6</td>
+	                    	<td>8-10</td>
+	                    	<td>$16</td>
+	                    	<td>$24</td>
+	                    </tr>
+	                    <tr>
+	                    	<td>8</td>
+	                    	<td>15-20</td>
+	                    	<td>$30 </td>
+	                    	<td>$45</td>
+	                    </tr>
+	                    <tr>	
+	                    	<td>10</td>
+	                    	<td>30-35</td>
+	                    	<td>$60</td>
+	                    	<td>$90</td>
+	                    </tr>
+	                    <tr>
+	                    	<td>12</td>
+	                    	<td>45-56</td>
+	                    	<td>$90</td>	
+	                    	<td>$135</td>	
+	                    </tr>	
+	                    <tr>
+	                    	<td>14</td>
+	                    	<td>65-78</td>
+	                    	<td>$130</td>	
+	                    	<td>$195</td>	
+	                    </tr>	
+	                    <tr>
+	                    	<td>16</td>
+	                    	<td>90-100</td>
+	                    	<td>$180</td>	
+	                    	<td>$270</td>	
+	                    </tr>	
+	                </table>
+            	</div>
+            	<br><br>        	 
+				<div class="CSSTableGeneratorChart" >
+                	<table >
+                		<tr><td colspan="4">Square 4 inch tall</td></tr>
+	                    <tr>
+	                        <td>Cake size </br> in Inches</td>
+	                        <td>Serves </td>
+	                        <td>Buttercream <br>price</td>   
+	
+	                        <td>Fondant<br>price</td>
+	                    </tr>
+	                     <tr>
+	                    	<td>6</td>
+	                    	<td>12-18</td>
+	                    	<td>$24</td>	
+	                    	<td>$36</td>	
+	                    </tr>	
+	                    <tr>
+	                    	<td>8</td>
+	                    	<td>24-32</td>
+	                    	<td>$48</td>	
+	                    	<td>$72</td>	
+	                    </tr>	
+	                    <tr>
+	                    	<td>10</td>
+	                    	<td>40-50</td>
+	                    	<td>$80</td>	
+	                    	<td>$120</td>	
+	                    </tr>	
+	                    <tr>
+	                    	<td>12</td>
+	                    	<td>20-72</td>
+	                    	<td>$120</td>	
+	                    	<td>$180</td>	
+	                    </tr>	
+	                    <tr>
+	                    	<td>16</td>
+	                    	<td>112-128</td>
+	                    	<td>$224</td>	
+	                    	<td>$336</td>	
+	                    </tr>	
+	                    
+	                </table>
+
+	            </div>        
+		</div><!--/ .tab-content -->
+		<div class="tab-content" id="ordering">
+				<ol>
+					<li>If you have any concerns on dietary regulations/allergies, please let us know.
+					<li>Choose your flavors/filling and icing (Buttercream or Fondant covered). For most complex decorations, fondant is preferred
+					    as it will give a neat finish.</li>
+					 <li>Choose your design. You can pick a design from our gallery  or send us a clear picture with notes on any changes.</li>
+					 <li>Choose your servings. <!--Have a look at our serving charts to get an idea.--></li>
+					 <li>Choose
+					 <li>Send us an E-mail (preferred as we would like to keep track of all conversations) or call us. </li>
+
+					 
+				</ol>
+		
+				<div class="divider-solid"></div>
+				<p>
+					After reviewing the details we will provide you a price quote. More details on timeframe, delivery, cancellation etc.
+				</p>
+
+					     
+
+
+				<div class="CSSTableGenerator" >
+					<table>
+					</table>
+				</div> 
+		</div><!-- tab content -->			
+		</div><!--/ .content tabs -->	
+		
+	</div><!--/ .columns-->
+	
+
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

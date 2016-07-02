@@ -1,0 +1,965 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->		
+
+<div class="container ajax">
+
+	<div class="page-header">
+
+		
+		<div id="close" class="tp-back">Back</div>
+
+	</div><!--/ .page-header-->
+	
+	<div class="albums-items">
+		<!-----
+		   image size has to be 280x230 -->
+
+		<ul id="tp-grid" class="tp-grid">
+                        <!-- Donot remove these comments. Mahesh Rajendran
+			<!-- datapile mapping: Birthday=Birthday 
+                                                           Wedding=Babyshower                       
+                        -->
+            <li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/1.jpg" rel="Birthday">
+					<img src="images/thumbnails/birthday/1.jpg" /> 
+					</a>
+					<span class="categories">Birthday_1<br>Simple 1st birthday</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/2.jpg" rel="Birthday">
+					<img src="images/thumbnails/birthday/2.jpg" /> 
+					</a>
+					<span class="categories">Birthday_2<br>Superman</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/3.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/3.jpg" />
+					</a>
+					<!--<a href="wedding.html" class="project-meta">
+						<h6 class="title">Stylish Portrait of Beautiful Model</h6>
+						<span class="categories">Birthday_irthday / Photography</span>
+					</a>	-->
+					<span class="categories">Birthday_3<br>Music Themed</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/4.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/4.jpg" />
+					</a>
+					<span class="categories">Birthday_4<br>Alphabet Owl</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/41.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/41.jpg" />
+					</a>
+					<span class="categories">Birthday_41<br>Simple Buttercream with Fresh Fruits</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/6.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/6.jpg" />
+					</a>
+					<span class="categories">Birthday_6<br>Scooby Doo</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/10.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/10.jpg" />
+					</a>
+					<span class="categories">Birthday_10<br>Animals</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			
+			
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/16.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/16.jpg" />
+					</a>
+					<span class="categories">Birthday_16<br>Animals in Farm </span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/17.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/17.jpg" />
+					</a>
+					<span class="categories">Birthday_17<br>Simple Zebra cake</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/18.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/18.jpg" />
+					</a>
+					<span class="categories">Birthday_18 <br>Diego</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/19.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/19.jpg" />
+					</a>
+					<span class="categories">Birthday_19 <br>Mickey</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/21.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/21.jpg" />
+					</a>
+					<span class="categories">Birthday_21 <br>Music</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/22.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/22.jpg" />
+					</a>
+					<span class="categories">Birthday_22<br>Elmo</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/23.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/23.jpg" />
+					</a>
+					<span class="categories">Birthday_23<br>Scientist</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/40.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/40.jpg" />
+					</a>
+					<span class="categories">Birthday_40<br>Animals</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/24.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/24.jpg" />
+					</a>
+					<span class="categories">Birthday_24<br>Simple Buttercream</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/26.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/26.jpg" />
+					</a>
+					<span class="categories">Birthday_26<br>Elmo with Fish Tank</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/27.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/27.jpg" />
+					</a>
+					<span class="categories">Birthday_27<br>Simple buttercream with flowers</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/28.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/28.jpg" />
+					</a>
+					<span class="categories">Birthday_28<br>Simple fondant</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/29.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/29.jpg" />
+					</a>
+					<span class="categories">Birthday_29<br>Mickey and Friends</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/30.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/30.jpg" />
+					</a>
+					<span class="categories">Birthday_30<br>Chubby Cheeks</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/31.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/31.jpg" />
+					</a>
+					<span class="categories">Birthday_31<br>Tiara (Gluten/Dairy Free) </span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/32.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/32.jpg" />
+					</a>
+					<span class="categories">Birthday_32<br>Princess</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/33.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/33.jpg" />
+					</a>
+					<span class="categories">Birthday_33<br>Music</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/34.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/34.jpg" />
+					</a>
+					<span class="categories">Birthday_34<br>dinosaur (Gluten free)</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/35.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/35.jpg" />
+					</a>
+					<span class="categories">Birthday_35<br>Simple buttercream</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/36.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/36.jpg" />
+					</a>
+					<span class="categories">Birthday_6<br>Nursery Rhymes</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/37.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/37.jpg" />
+					</a>
+					<span class="categories">Birthday_37<br>Mougli</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/38.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/38.jpg" />
+					</a>
+					<span class="categories">Birthday_38<br>Mickey-simple buttercream</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/39.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/39.jpg" />
+					</a>
+					<span class="categories">Birthday_39<br>Pokemon (Gluten free)</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/15.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/15.jpg" />
+					</a>
+					<span class="categories">Birthday_15<br>Harley Davidson</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/7.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/7.jpg" />
+					</a>
+					<span class="categories">Birthday_7<br></span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/8.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/8.jpg" />
+					</a>
+					<span class="categories">Birthday_8<br></span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/12.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/12.jpg" />
+					</a>
+					<span class="categories">Birthday_12<br>Princess</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/13.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/13.jpg" />
+					</a>
+					<span class="categories">Birthday_13<br>Princess</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/14.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/14.jpg" />
+					</a>
+					<span class="categories">Birthday_14<br>Princess</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/11.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/11.jpg" />
+					</a>
+					<span class="categories">Birthday_11<br>Chocolate Fort</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Birthday">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/birthday/5.jpg" rel="Birthday">
+						<img src="images/thumbnails/birthday/5.jpg" />
+					</a>
+					<span class="categories">Birthday_5<br>Simple fondant</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+             
+
+			<!-- Babyshower starts here -->
+			<li data-pile="Babyshower">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/babyshower/1.jpg" rel="Babyshower">
+						<img src="images/thumbnails/babyshower/1.jpg" />
+					</a>
+					<span class="categories">Babyshower_1<br>Babyshower with booties</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Babyshower">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/babyshower/2.jpg" rel="Babyshower">
+						<img src="images/thumbnails/babyshower/2.jpg" />
+					</a>
+						<span class="categories">Babyshower_2<br>Buttercream Bumble Bee</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Babyshower">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/babyshower/3.jpg" rel="Babyshower">
+						<img src="images/thumbnails/babyshower/3.jpg" />
+					</a>
+					<span class="categories">Babyshower_3<br>Peekaboo</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Babyshower">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/babyshower/4.jpg" rel="Babyshower">
+						<img src="images/thumbnails/babyshower/4.jpg" />
+					</a>
+					<span class="categories">Babyshower_4<br>Baby Shower</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<!--
+			
+			
+			               Sculpted  cakes start here 
+			                
+			-->
+			
+			<li data-pile="Sculpted ">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sculpted/bible.jpg" rel="Sculpted">
+						<img src="images/thumbnails/sculpted/bible.jpg" />
+					</a>
+						<span class="categories">Sculpted_Bible<br>Bible</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Sculpted ">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sculpted/monkey2.jpg" rel="Sculpted">
+						<img src="images/thumbnails/sculpted/monkey2.jpg" />
+					</a>
+					<span class="categories">Sculpted_Monkeys<br>Monkeys in a crate</span>	
+				</div><!--/ .project-thumb-->	
+			</li>									
+			<li data-pile="Sculpted ">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sculpted/pillow.jpg" rel="Sculpted">
+						<img src="images/thumbnails/sculpted/pillow.jpg" />
+					</a>
+					<span class="categories">Sculpted_Pillow<br>Princess Pillow with Tiara</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Sculpted ">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sculpted/scientist.jpg" rel="Sculpted">
+						<img src="images/thumbnails/sculpted/scientist.jpg" />
+					</a>
+						<span class="categories">Sculpted_Scientist<br>Mad Scientist</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			 <li data-pile="Sculpted ">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sculpted/dina2.jpg" rel="Sculpted">
+						<img src="images/thumbnails/sculpted/dina2.jpg" />
+					</a>
+					<span class="categories">Sculpted_Dina<br>Sculpted Dinosaur (Gluten Free)</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Sculpted ">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sculpted/8.jpg" rel="Sculpted">
+						<img src="images/thumbnails/sculpted/8.jpg" />
+					</a>
+					<span class="categories">Sculpted_Dina<br>Sculpted - Barrel (Dairy Free)</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			
+			<!--
+			
+			Sports
+			
+			-->
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/13.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/13.jpg" />
+					</a>
+						<span class="categories">Sports_13<br>Car</span>
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/1.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/1.jpg" />
+					</a>
+					<span class="categories">Sports_1<br>Bey Blade</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+		
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/2.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/2.jpg" />
+					</a>
+					<span class="categories">Sports_2<br>Cars</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/4.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/4.jpg" />
+					</a>
+					<span class="categories">Sports_4<br>Harley Davidson</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/7.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/7.jpg" />
+					</a>
+					<span class="categories">Sports_7<br>Tae Kwon Do Black Belts</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/9.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/9.jpg" />
+					</a>
+					<span class="categories">Sports_9<br>McQueen Car</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/10.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/10.jpg" />
+					</a>
+					<span class="categories">Sports_10<br>Olympics</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/8.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/8.jpg" />
+					</a>
+					<span class="categories">Sports_10<br>Tae Kwon Do</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Sports">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/sports/11.jpg" rel="Sports">
+						<img src="images/thumbnails/sports/11.jpg" />
+					</a>
+					<span class="categories">Sports_11<br>Bay Blades (Gluten / Dairy Free)</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<!--
+			
+			Figurines
+			
+			-->
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/1.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/1.jpg" />
+					</a>
+					<span class="categories">Figurines_1<br>Man on Motorcyle</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/3.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/3.jpg" />
+					</a>
+				<span class="categories">Figurines_3<br>Monkeys with Bananas</span>			
+				</div><!--/ .project-thumb-->	
+			</li>			
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/4.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/4.jpg" />
+					</a>
+					<span class="categories">Figurines_4<br>Ducks swmming in a pond</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/5.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/5.jpg" />
+					</a>
+				<span class="categories">Figurines_5<br>Baby</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/6.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/6.jpg" />
+					</a>
+				<span class="categories">Figurines_6<br>Elmo</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/7.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/7.jpg" />
+					</a>
+				<span class="categories">Figurines_7<br>Tae kwon do - board breaking</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/8.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/8.jpg" />
+					</a>
+					<span class="categories">Figurines_8<br>Scientist</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/9.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/9.jpg" />
+					</a>
+					<span class="categories">Figurines_9<br>Tae kwon do - Black Belts </span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/10.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/10.jpg" />
+					</a>
+				<span class="categories">Figurines_10<br> Mary and Lambs</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/11.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/11.jpg" />
+					</a>
+				<span class="categories">Figurines_11<br>Mougli and friends</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/12.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/12.jpg" />
+					</a>
+					<span class="categories">Figurines_12<br>Baby</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/13.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/13.jpg" />
+					</a>
+				<span class="categories">Figurines_13<br>Goofy</span>				
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/14.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/14.jpg" />
+					</a>
+				<span class="categories">Figurines_14<br>Daisy</span>				
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/15.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/15.jpg" />
+					</a>
+				<span class="categories">Figurines_15<br>Pluto</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/20.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/20.jpg" />
+					</a>
+					<span class="categories">Figurines_20<br>Mickie and Minnie</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/17.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/17.jpg" />
+					</a>
+					<span class="categories">Figurines_17<br>Monkey</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/18.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/18.jpg" />
+					</a>
+					<span class="categories">Figurines_18<br>Elephant</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/19.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/19.jpg" />
+					</a>
+					<span class="categories">Figurines_19<br>Cars</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/21.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/21.jpg" />
+					</a>
+					<span class="categories">Figurines_21<br>Superman</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Figurines">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/figurines/16.jpg" rel="Figurines">
+						<img src="images/thumbnails/figurines/16.jpg" />
+					</a>
+					<span class="categories">Figurines_16<br>Animals</span>			
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/10.jpg" rel="Other">
+						<img src="images/thumbnails/other/10.jpg" />
+					</a>
+					<span class="categories">Other_10<br>10 Anniversary </span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/65.jpg" rel="Other">
+						<img src="images/thumbnails/other/65.jpg" />
+					</a>
+					<span class="categories">Other_65<br>Number 65</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/0.jpg" rel="Other">
+						<img src="images/thumbnails/other/0.jpg" />
+					</a>
+					<span class="categories">Other_0<br>Graduation</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/3.jpg" rel="Other">
+						<img src="images/thumbnails/other/3.jpg" />
+					</a>
+					<span class="categories">Other_3<br>Dance Recital</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/4.jpg" rel="Other">
+						<img src="images/thumbnails/other/4.jpg" />
+					</a>
+					<span class="categories">Other_4<br>Graduation</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/6.jpg" rel="Other">
+						<img src="images/thumbnails/other/6.jpg" />
+					</a>
+					<span class="categories">Other_6<br>Fall Themed</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/8.jpg" rel="Other">
+						<img src="images/thumbnails/other/8.jpg" />
+					</a>
+					<span class="categories">Other_8<br>Easter</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/9.jpg" rel="Other">
+						<img src="images/thumbnails/other/9.jpg" />
+					</a>
+					<span class="categories">Other_9<br>Tae Kwon Do</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/7.jpg" rel="Other">
+						<img src="images/thumbnails/other/7.jpg" />
+					</a>
+					<span class="categories">Other_7<br>Flower Basket with Birds</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/11.jpg" rel="Other">
+						<img src="images/thumbnails/other/11.jpg" />
+					</a>
+					<span class="categories">Other_11<br>Party Favors</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Other">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/other/2.jpg" rel="Other">
+						<img src="images/thumbnails/other/2.jpg" />
+					</a>
+					<span class="categories">Other_2<br>Dance Recital</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Religious">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/religious/4.jpg" rel="Religious">
+						<img src="images/thumbnails/religious/4	.jpg" />
+					</a>
+					<span class="categories">Religious_4<br>Booties</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Religious">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/religious/1.jpg" rel="Religious">
+						<img src="images/thumbnails/religious/1.jpg" />
+					</a>
+					<span class="categories">Religious_1<br>Communion</span>		
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Religious">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/religious/3.jpg" rel="Religious">
+						<img src="images/thumbnails/religious/3.jpg" />
+					</a>
+					<span class="categories">Religious_3<br>Communion</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Religious">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/religious/2.jpg" rel="Religious">
+						<img src="images/thumbnails/religious/2.jpg" />
+					</a>
+					<span class="categories">Religious_2<br>Bible</span>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+						<a class="single-image plus-icon animTop" href="images/wedding/1.jpg" rel="Wedding">
+						<img src="images/thumbnails/wedding/1.jpg" />
+					</a>
+					<span class="categories">Wedding_1<br>Wedding Cupcakes/span>	
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+						<a class="single-image plus-icon animTop" href="images/wedding/2.jpg" rel="Wedding">
+						<img src="images/thumbnails/wedding/2.jpg" />
+					</a>
+					<span class="categories">Wedding_2<br>Wedding Cupcake Topper</span>						
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/wedding/3.jpg" rel="Wedding">
+						<img src="images/thumbnails/wedding/3.jpg" />
+					</a>
+				<span class="categories">Wedding_3<br>Cupcakes</span>
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/wedding/4.jpg" rel="Wedding">
+						<img src="images/thumbnails/wedding/4.jpg" />
+					</a>
+					<span class="categories">Wedding_4<br>Two Tier Wedding Cake with White Roses</span>
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/wedding/5.jpg" rel="Wedding">
+						<img src="images/thumbnails/wedding/5.jpg" />
+					</a>
+					<span class="categories">Wedding_5<br>Music</span>
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+						<a class="single-image plus-icon animTop" href="images/wedding/6.jpg" rel="Wedding">
+						<img src="images/thumbnails/wedding/6.jpg" />
+					</a>
+					<span class="categories">Wedding_6<br>Roses</span>
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Cupcakes">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/cupcakes/1.jpg" rel="Cupcakes">
+						<img src="images/thumbnails/cupcakes/1.jpg" />
+					</a>
+					<span class="categories">Cupcakes_1<br>Mickey and Minnie</span>	
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Cupcakes">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/cupcakes/2.jpg" rel="Cupcakes">
+						<img src="images/thumbnails/cupcakes/2.jpg" />
+					</a>
+					<span class="categories">Cupcakes_2<br>Simple Decorated cupcakes</span>		
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Cupcakes">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/cupcakes/3.jpg" rel="Cupcakes">
+						<img src="images/thumbnails/cupcakes/3.jpg" />
+					</a>
+					<span class="categories">Cupcakes_3<br>Cupcakes with Alphabets</span>		
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Cupcakes">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/cupcakes/5.jpg" rel="Cupcakes">
+						<img src="images/thumbnails/cupcakes/5.jpg" />
+					</a>
+					<span class="categories">Cupcakes_5<br>Fall Themed Wedding cupcake</span>		
+				</div><!--/ .project-thumb-->	
+			</li>	
+			
+			<li data-pile="Cupcakes">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/cupcakes/7.jpg" rel="Cupcakes">
+						<img src="images/thumbnails/cupcakes/7.jpg" />
+					</a>
+					<span class="categories">Cupcakes_7<br>Cupcakes with Flowers</span>			
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Cupcakes">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/cupcakes/8.jpg" rel="Cupcakes">
+						<img src="images/thumbnails/cupcakes/8.jpg" />
+					</a>
+					<span class="categories">Cupcake_8<br>Party Favors</span>			
+				</div><!--/ .project-thumb-->	
+			</li>	
+			<li data-pile="Cupcakes">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/cupcakes/4.jpg" rel="Cupcakes">
+						<img src="images/thumbnails/cupcakes/4.jpg" />
+					</a>
+					<span class="categories">Cupcakes_4<br>Cupcakes with hearts and butterflies</span>		
+				</div><!--/ .project-thumb-->	
+			</li>	
+		</ul><!--/ #tp-grid-->	
+		<div class="page-header">
+		    <br>	
+			<div id="close" class="tp-back">Back</div>
+	    </div><!--/ .page-header-->
+	</div><!--/ .albums-items-->
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

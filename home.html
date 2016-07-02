@@ -1,0 +1,201 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="ajax">
+   <!-- 
+		fashion=birthday = home.html
+	        wedding=BabyShower=home2.html
+	        interior=graduation=home3.html
+
+  
+	<ul class="scroll-box-nav">
+		<li class="active"><a href="home.html">Birthday Cakes</a></li>
+		<li><a href="home2.html">Baby Shower</a></li>
+		<li><a href="home3.html">Graduation </a></li>  	</ul><!--/ .scroll-box-nav-->
+	
+	<div class="scroll-box">
+
+		<div class="grid">
+
+			<div class="gr-box"> 
+
+				<div class="item large">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/duck.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/duck.jpg" alt="">
+						</a>
+
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/lion.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/lion.jpg" alt="">
+						</a>
+
+						
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/dragon.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/dragon.jpg" alt="">
+						</a>
+
+					
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->			
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/owl.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/owl.jpg" alt="">
+						</a>
+
+						
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+                               </div><!--/ .gr-box-->	
+			<div class="gr-box">
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/goofy.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/goofy.jpg" alt="">
+						</a>
+
+						
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+			<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/beyblade.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/beyblade.jpg" alt="">
+						</a>
+
+						
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+			<div class="item large">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/dina.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/dina.jpg" alt="">
+						</a>
+
+						
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+
+
+
+
+			</div><!--/ .gr-box-->
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/safari.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/safari.jpg" alt="">
+						</a>
+	
+						
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+                               </div><!--/ .gr-box-->	
+
+
+			<div class="gr-box">
+				<div class="item large">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/cupcake2.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/cupcake2.jpg" alt="">
+						</a>
+
+						
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->				
+				
+
+				<div class="item large">
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/homepage/cupcake.jpg" rel="grid">
+							<img src="images/thumbnails/homepage/cupcake.jpg" alt="">
+						</a>
+
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+			 </div><!--/ .gr-box-->	
+			
+
+	</div><!--/ .scroll-box-->
+	
+</div><!--/ .ajax-->

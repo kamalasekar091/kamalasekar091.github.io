@@ -1,0 +1,277 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">	
+	<div class="eight columns">
+		
+		<div class="acc-box">
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Do I need an appointment to order a cake?</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					In most cases, no. Unless it is a complicated design/flavour that we cannot get finalized over e-mail / phone,
+					generally there is no need to fix an appointment to order a cake. If you want to sample, yes, you do need to fix 
+					an appointment.
+				</p>	
+
+			</div><!--/ .acc-container-->	
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Do you offer cake tastings?</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Yes. With prior appointments for wedding cakes and orders more than $300. Tastings are available for $25 and include three cake flavors, fillings, and icings of your choice. 
+					If the order is placed, the tasting fee can be applied toward your order. 
+
+				</p>	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">When to order a cake? How far in advance should the order be placed?	 </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Ideally, atleast a month before. We do understand that there might be last minute decision making.
+					So practically, 2 weeks before your event date. Sometimes, we *can* accomodate last minute orders, depending on how busy we are. Please call and check our availability.
+				</p>	
+	
+
+			</div><!--/ .acc-container-->	
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">What are the payment options?</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Payment is due while you pickup/we deliver the cake. In case of cakes more than $200, 25% of the price should be paid in advance as a deposit. For now we accept cash and checks. Please make checks payable
+					to <b>Vidhya Seshadri</b>.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">How can I cancel/change my order?	 </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					You can always cancel your order one week before and if cancelled any deposit made will be refunded.
+					Most simple changes can be accomodated until a week before. All cancellations/changes must be made in writing.
+				</p>	
+
+			</div><!--/ .acc-container-->
+
+			
+			
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">How can I get a price quote on custom cakes? </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Custom cakes are priced based on size, flavor and design/decoration. The price / quote will vary depending on this. 
+					After reviewing the cake design/size and decoration we can certainly quote you with the most appropriate price.
+				</p>	
+
+			</div><!--/ .acc-container-->					
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Do you ship your cake?</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					No. Our cakes are made fresh and are very fragile and we do not want to risk it.
+					We do deliver to most areas between Boston, MA and Manchester,NH for a very nominal additional fee.
+					Free delivery to all location within 5 miles from Salem, NH.
+				</p>	
+				
+			</div><!--/ .acc-container-->	
+
+		</div><!--/ .acc-box-->
+		
+	</div><!--/ .columns-->
+		
+	<div class="eight columns">
+		
+		<div class="acc-box">
+
+
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">What is the smallest cake you can make?</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					 Our smallest cakes are 6" diameter and 4" tall. The smallest two tier cake we make is for 10-15 serving. <br>
+					 The smallest three tier cake is 25 servings. And there won’t be any extra price for per serving if the cake is tiered . <br>
+					 For Cupcakes, minimum order is 1 dozen.
+
+				</p>	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Do you charge more per serving for Wedding cakes than for Party cakes? </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					No. Charge is same per serving. Price may vary depending on decoration.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">What is the best way to save the top tier of our wedding cake so that it's actually edible
+					    on our one-year wedding anniversary?</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+				Please find the tips posted <a href="http://www.wilton.com/cakes/displaying-cakes/storing-top-tier-wedding-cake.cfm" target="wilton tips">here</a>.
+				But wait!. <br>
+				To help you celebrate on your First Anniversary, we will make you a fresh 6-inch cake inscribed with "Happy Anniversary" or 
+				reproduction of your original Wedding first tier cake (provided you can send us your original wedding cake picture)
+				with no additional charge.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">None of your designs from your gallery impress me. Can I provide my own design/image to be reproduced?</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					By all means!.	Please provide us with a clear image of your cake with any alterations.		
+				</p>	
+
+			</div><!--/ .acc-container-->		
+					
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Do you make display cakes? </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Yes!. We do make display cakes for bridal events, outdoor events etc.	
+				</p>	
+
+			</div><!--/ .acc-container-->		
+			
+<!--				<a href="#">Do you provide fresh flowers to decorate cake? </a>
+			</span>
+
+			<div class="acc-container">
+<!--
+				<p>
+					No. You will have to work that out with your florist.	
+				</p>	
+
+			</div><!--/ .acc-container-->	
+					
+
+			
+<!--			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Do you make cakes for folks with Food Allergy & Special Dietary Considerations? </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					 Yes. While we do make Gluten Free / Dairy free/ Nut free/ Egg Free cakes, our facility
+					 is not dedicated for above dietary conditions. Eventhough we take it very seriously to avoid 
+					 any cross-contamination, <i><b>if you are highly allergic to above, we do not suggest having our cake</b></i>.
+					 These are the procedures we generally use to minimise the risk for above dietery conditions.
+					 <ol>
+						<li>Use separate pans</li>
+						<li> Have separate utensils, spatula, hand mixers  etc. </li>
+						<li> Use separate tools for common decorations (icing bags/tips etc). Fondant tools are shared as my fondant is gluten free by default.</li>
+
+						<li>To grease the pan I use my own mixture (shortening + oil + rice flour).</li>
+
+						<li>We use commercially available gluten free / dairy free cake mixes for these cakes.</li>
+						<li>For dairy free cakes, use rice milk for batter and icing.</li>
+						<li>We use No Meringue powder ( used for icing).</li>
+						<li>For special decorations / figurines we use rice krispies. </li>
+
+					</ol>
+					 
+				</p>	
+	
+
+			</div><!--/ .acc-container-->	
+
+		</div><!--/ .acc-box-->
+		
+	</div><!--/ .columns-->
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

@@ -1,0 +1,107 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">
+	
+	<div class="page-header">
+		<h1>Birthday Cakes</h1>
+	</div><!--/ .page-header-->		
+
+	<ul id="thumbnails" class="thumbnails-items clearfix">
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/1.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/2.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/3.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/4.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/5.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/6.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/7.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/8.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/9.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/10.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/11.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/12.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/13.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/14.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/15.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/16.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/17.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/18.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/19.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/birthday/20.jpg" alt="" /></a></li>
+	</ul><!--/ #thumbnails-->
+	
+	<div class="activeSlider">
+		<div class="sudo">
+			<ul>				
+				<li><img src="images/birthday/1.jpg" alt=""/></li>
+				<li><img src="images/birthday/2.jpg" alt=""/></li>
+				<li><img src="images/birthday/3.jpg" alt=""/></li>
+				<li><img src="images/birthday/4.jpg" alt=""/></li>
+				<li><img src="images/birthday/5.jpg" alt=""/></li>
+				<li><img src="images/birthday/6.jpg" alt=""/></li>
+				<li><img src="images/birthday/7.jpg" alt=""/></li>
+				<li><img src="images/birthday/8.jpg" alt=""/></li>
+				<li><img src="images/birthday/9.jpg" alt=""/></li>
+				<li><img src="images/birthday/10.jpg" alt=""/></li>
+				<li><img src="images/birthday/11.jpg" alt=""/></li>
+				<li><img src="images/birthday/12.jpg" alt=""/></li>
+				<li><img src="images/birthday/13.jpg" alt=""/></li>
+				<li><img src="images/birthday/14.jpg" alt=""/></li>
+				<li><img src="images/birthday/15.jpg" alt=""/></li>
+				<li><img src="images/birthday/16.jpg" alt=""/></li>
+				<li><img src="images/birthday/17.jpg" alt=""/></li>
+				<li><img src="images/birthday/18.jpg" alt=""/></li>
+				<li><img src="images/birthday/19.jpg" alt=""/></li>
+				<li><img src="images/birthday/20.jpg" alt=""/></li>
+			</ul>
+		</div><!--/ .sudo-->
+	</div><!--/ .activeSlider-->
+
+</div><!--/ .container-->
+
+<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		
